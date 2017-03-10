@@ -1,0 +1,285 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  color: #ffffff;
+
+  background-color: #f1f5f7;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.top-header {
+  min-height: 42px;
+
+  background-color: #293449;
+}
+
+.logo {
+  float: left;
+
+  max-width: 116px;
+  margin-top: 0;
+  margin-bottom: -5px;
+  padding: 11px 52px 7px;
+  /*Лучше унаследовать?*/
+  font-family: 'Cuprum', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  /*Зачем?*/
+  text-decoration: none;
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+  cursor: pointer;
+}
+
+.logo:active {
+  background-color: #ba2732;
+
+  cursor: pointer;
+}
+
+.search {
+  position: relative;
+
+  float: left;
+  width: 270px;
+}
+
+.search input {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 48px;
+
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: white;
+
+  background-color: #293449;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.search input:hover {
+  background-color: #212a3a;
+}
+
+.search input:focus {
+  color: black;
+
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  opacity: 1;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+input[type="search"]::-moz-placeholder {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+input[type="search"]:-moz-placeholder {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+input[type="search"]:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.icon-search {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
+  width: 20px;
+  height: 20px;
+
+  background: url("../../img/sprite.png") no-repeat -106px -1px;
+}
+
+.top-header-menu a {
+  position: relative;
+
+  float: left;
+  padding: 12px 31px 12px 45px;
+
+  font-size: 17px;
+  line-height: 17px;
+  text-decoration: none;
+  color: white;
+}
+
+a.bookmarks:hover, a.cart:hover {
+  background-color: #212a3a;
+}
+
+a.bookmarks:active, a.cart:active {
+  background-color: #161d29;
+}
+
+a.btn-order {
+  max-width: 110px;
+  padding: 12px 19px 12px 19px;
+
+  background-color: #63a63e;
+}
+
+a.btn-order:hover {
+  background-color: #5fbb2d;
+}
+
+a.btn-order:active {
+  background-color: #518534;
+}
+
+.bookmarks::before {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
+  width: 20px;
+  height: 20px;
+
+  background: url("../../img/sprite.png") no-repeat -53px 1px;
+
+  content: "";
+}
+
+.bookmarks:hover::before {
+  background-position: -53px -49px;
+}
+
+.bookmarks:active::before {
+  background-position: -54px -99px;
+}
+
+.cart::before {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
+  width: 20px;
+  height: 20px;
+
+  background: url("../../img/sprite.png") no-repeat -8px 1px;
+
+  content: "";
+}
+
+.cart:hover::before {
+  background-position: -8px -49px;
+}
+
+.cart:active::before {
+  background-position: -9px -99px;
+}
+
+.bottom-header {
+  outline: blue dashed 1px;
+}
+
+/*Слайдер*/
+
+.slider {
+  position: relative;
+
+  width: 620px;
+  height: 266px;
+}
+
+.slide {
+  position: absolute;
+
+  width: 620px;
+  height: 266px;
+}
+
+.slide:nth-child(1) {
+  background-image: url(../../img/perforators.jpg);
+}
+
+.slide:nth-child(2) {
+  background-image: url(../../img/drills.jpg);
+}
+
+.arrow-left::before {
+  position: absolute;
+  z-index: 20;
+  left: 22px;
+  top: 123px;
+
+  display: block;
+  width: 28px;
+  height: 4px;
+
+  background: #ffffff;
+  transform: rotate(-45deg);
+  /*контент на каком месте?*/
+  content: "";
+  cursor: pointer;
+}
+
+.arrow-right::before {
+  position: absolute;
+  z-index: 20;
+  right: 22px;
+  top: 123px;
+
+  display: block;
+  width: 28px;
+  height: 4px;
+
+  background: #ffffff;
+  transform: rotate(45deg);
+
+  content: "";
+  cursor: pointer;
+}
+
+/*.slide {
+	display: none;
+}*/
+
+#btn-1:checked ~ .slides .slide:nth-child(1),
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+input, p, textarea {
+  padding: 0;
+  margin: 0;
+}
+
+.service-block input[type=radio], .slider input[type=radio] {
+  position: absolute;
+
+  opacity: 0;
+}
