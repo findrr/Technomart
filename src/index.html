@@ -36,7 +36,6 @@
             <a class="btn-sign-in" href="#">Войти</a>
             <a class="btn-sign-up" href="#">Регистрация</a>
           </div>
-
         </div>
         <nav class="container clearfix main-nav">
           <ul>
@@ -51,104 +50,122 @@
         </nav>
       </div>
     </header>
-    <main class="container clearfix">
-      <section class="categories">
-        <div class="categories-item">
-          <h3 class="categories-name">Материалы</h3>
-          <a class="btn btn-category" href="#">На любой вкуус</a>
-          <img src="../img/category-icons/1.png" alt="Материалы">
-          <img src="../img/flags/new.png" alt="new">
+    <main class="">
+      <div class="block-1">
+        <div class="container">
+          <section class="categories clearfix">
+            <div class="category-item new">
+              <h3 class="categories-name">Материалы</h3>
+              <a class="btn-category" href="#">На любой вкус</a>
+              <div class="category-img">
+                <img src="../img/materials-icon.png" alt="Материалы">
+              </div>
+            </div>
+            <div class="category-item">
+              <h3 class="categories-name">Инструмент</h3>
+              <a class="btn-category" href="#">На все случаи</a>
+              <div class="category-img">
+                <img src="../img/tool-icon.png" alt="">
+              </div>
+            </div>
+            <div class="category-item">
+              <h3 class="categories-name">Техника</h3>
+              <a class="btn-category" href="#">Для стройки</a>
+              <div class="category-img">
+                <img src="../img/technics-icon.png" alt="">
+              </div>
+            </div>
+            <article class="slider">
+              <!--<div class="slides">
+                <div class="slide">
+                </div>
+                <div class="slide">
+                </div>
+              </div>
+              <input id="btn-1" type="radio" name="toggle" checked>
+              <input id="btn-2" type="radio" name="toggle">
+              <label class="arrow-left" for="btn-1"></label>
+              <label class="arrow-right" for="btn-2"></label>
+               <div class="slide-controls">
+                  <a href="#" class="page active"></a>
+                  <a href="#" class="page"></a>
+              </div> -->
+            </article>
+            <div class="category-item">
+              <h3 class="categories-name">Скидки 50%</h3>
+              <a class="btn-category" href="#">На 350 товаров</a>
+              <div class="category-img">
+                <img src="../img/discounts-icon.png" alt="">
+              </div>
+            </div>
+            <div class="category-item">
+              <h3 class="categories-name">Доставка</h3>
+              <a class="btn-category" href="#">Бесплатно</a>
+              <div class="category-img">
+                <img src="../img/delivery-icon.png" alt="">
+              </div>
+            </div>
+          </section>
+          <article class="hot-products">
+            <header class="hot-products-header">
+              <h2>Популярные товары:</h2>
+              <a class="btn" href="#">Все популярные товары:</a>
+            </header>
+            <!-- Пока без hover'а => без кнопок-->
+            <ul class="products">
+              <li class="products-item">
+                <img src="../img/products/item-1.png" alt="Товар-1">
+                <div class="products-item-titles">
+                  <span class="category-brand-name">Перфоратор BOSCH</span>
+                  <span class="model-name">BFG 9000</span>
+                </div>
+              </li>
+              <li class="products-item">
+                <img src="../img/products/item-2.png" alt="Товар-2">
+                <div class="products-item-titles">
+                  <span class="category-brand-name">Перфоратор BOSCH</span>
+                  <span class="model-name">BFG 3000</span>
+                </div>
+              </li>
+              <li class="products-item">
+                <img src="../img/products/item-3.png" alt="Товар-3">
+                <div class="products-item-titles">
+                  <span class="category-brand-name">Перфоратор BOSCH</span>
+                  <span class="model-name">BFG 6000</span>
+                </div>
+              </li>
+              <li class="products-item">
+                <img src="../img/products/item-4.png" alt="Товар-4">
+                <div class="products-item-titles">
+                  <span class="category-brand-name">Перфоратор BOSCH</span>
+                  <span class="model-name">BFG 2000</span>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="hot-brands">
+            <header class="hot-brands-header">
+              <h2>Популярные производители:</h2>
+              <a class="btn" href="#">Все популярные производители:</a>
+            </header>
+            <!-- Пока без hover'а -->
+            <ul class="brands">
+              <li><a href="#"><img src="../img/brands/item-1.png" alt="Производитель-1"></a></li>
+              <li><a href="#"><img src="../img/brands/item-2.png" alt="Производитель-2"></a></li>
+              <li><a href="#"><img src="../img/brands/item-3.png" alt="Производитель-3"></a></li>
+              <li><a href="#"><img src="../img/brands/item-4.png" alt="Производитель-4"></a></li>
+              <li><a href="#"><img src="../img/brands/item-5.png" alt="Производитель-5"></a></li>
+              <li><a href="#"><img src="../img/brands/item-6.png" alt="Производитель-6"></a></li>
+              <li><a href="#"><img src="../img/brands/item-7.png" alt="Производитель-7"></a></li>
+              <li><a href="#"><img src="../img/brands/item-8.png" alt="Производитель-8"></a></li>
+            </ul>
+          </article>
         </div>
-        <div class="categories-item">Инструмент
-          <a class="btn btn-category" href="#">На все случаи жизни</a>
-          <img src="../img/category-icons/2.png" alt="">
-        </div>
-        <article class="slider">
-          <div class="slides">
-            <div class="slide">
-            </div>
-            <div class="slide">
-            </div>
-          </div>
-          <input id="btn-1" type="radio" name="toggle" checked>
-          <input id="btn-2" type="radio" name="toggle">
-          <label class="arrow-left" for="btn-1"></label>
-          <label class="arrow-right" for="btn-2"></label>
-          <!-- <div class="slide-controls">
-              <a href="#" class="page active"></a>
-              <a href="#" class="page"></a>
-          </div> -->
-        </article>
-        <div class="categories-item">
-          <h3 class="categories-name">Техника</h3>
-          <a class="btn btn-category" href="#">Для стройки</a>
-          <img src="../img/category-icons/3.png" alt="">
-        </div>
-        <div class="categories-item">
-          <h3 class="categories-name">Скидки 50%</h3>
-          <a class="btn btn-category" href="#">На 350 товаров</a>
-          <img src="../img/category-icons/4.png" alt="">
-        </div>
-        <div class="categories-item">
-          <h3 class="categories-name">Доставка</h3>
-          <a class="btn btn-category" href="#">Бесплатно</a>
-          <img src="../img/category-icons/5.png" alt="">
-        </div>
-      </section>
-      <article class="hot-products">
-        <header class="hot-products-header">
-          <h2>Популярные товары:</h2>
-          <a class="btn" href="#">Все популярные товары:</a>
-        </header>
-        <!-- Пока без hover'а => без кнопок-->
-        <ul class="products">
-          <li class="products-item">
-            <img src="../img/products/item-1.png" alt="Товар-1">
-            <div class="products-item-titles">
-              <span class="category-brand-name">Перфоратор BOSCH</span>
-              <span class="model-name">BFG 9000</span>
-            </div>
-          </li>
-          <li class="products-item">
-            <img src="../img/products/item-2.png" alt="Товар-2">
-            <div class="products-item-titles">
-              <span class="category-brand-name">Перфоратор BOSCH</span>
-              <span class="model-name">BFG 3000</span>
-            </div>
-          </li>
-          <li class="products-item">
-            <img src="../img/products/item-3.png" alt="Товар-3">
-            <div class="products-item-titles">
-              <span class="category-brand-name">Перфоратор BOSCH</span>
-              <span class="model-name">BFG 6000</span>
-            </div>
-          </li>
-          <li class="products-item">
-            <img src="../img/products/item-4.png" alt="Товар-4">
-            <div class="products-item-titles">
-              <span class="category-brand-name">Перфоратор BOSCH</span>
-              <span class="model-name">BFG 2000</span>
-            </div>
-          </li>
-        </ul>
-      </article>
-      <article class="hot-brands">
-        <header class="hot-brands-header">
-          <h2>Популярные производители:</h2>
-          <a class="btn" href="#">Все популярные производители:</a>
-        </header>
-        <!-- Пока без hover'а -->
-        <ul class="brands">
-          <li><a href="#"><img src="../img/brands/item-1.png" alt="Производитель-1"></a></li>
-          <li><a href="#"><img src="../img/brands/item-2.png" alt="Производитель-2"></a></li>
-          <li><a href="#"><img src="../img/brands/item-3.png" alt="Производитель-3"></a></li>
-          <li><a href="#"><img src="../img/brands/item-4.png" alt="Производитель-4"></a></li>
-          <li><a href="#"><img src="../img/brands/item-5.png" alt="Производитель-5"></a></li>
-          <li><a href="#"><img src="../img/brands/item-6.png" alt="Производитель-6"></a></li>
-          <li><a href="#"><img src="../img/brands/item-7.png" alt="Производитель-7"></a></li>
-          <li><a href="#"><img src="../img/brands/item-8.png" alt="Производитель-8"></a></li>
-        </ul>
-      </article>
+
+      </div>
+<div class="block-2">
+
+</div>
       <section class="serv-delivery">
         <!-- Не уверен что здесь b -->
         <h2>Сервисы</h2>

@@ -8,7 +8,7 @@ body {
   font-family: 'Cuprum', 'Arial', sans-serif;
   color: #ffffff;
 
-  background-color: #f1f5f7;
+  background-color: #ffffff;
 }
 
 .container {
@@ -16,6 +16,12 @@ body {
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.main-header {
+  padding-bottom: 65px;
+
+  background-color: #f1f5f7;
 }
 
 .top-header {
@@ -329,6 +335,7 @@ a.btn-order:active {
 
 .main-nav li {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .main-nav a {
@@ -351,15 +358,122 @@ a.btn-order:active {
   background-color: #1d2739;
 }
 
-/*Слайдер*/
+.block-1 {
+  background-color: #ffffff;
+}
 
-/*.slider {
+.categories {
+  padding: 60px 0 55px;
+
+  font-size: 0;
+}
+
+.category-item {
   position: relative;
 
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+  height: 123px;
+  margin: 0 0 20px 20px;
+
+  background-color: #f6b22d;
+}
+
+.category-item:nth-child(1) {
+  margin-left: 0;
+}
+
+.category-item:nth-child(2) {
+  background-color: #4aafde;
+}
+
+.category-item:nth-child(3) {
+  background-color: #cc79d1;
+}
+
+.category-item:nth-child(5) {
+  background-color: #85d179;
+}
+
+.categories-name {
+  position: absolute;
+  left: 22px;
+  top: 25px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.category-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 123px;
+  height: 123px;
+}
+
+.category-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%,-50%);
+}
+
+.btn-category {
+  position: absolute;
+  top: 63px;
+  left: 25px;
+
+  width: 136px;
+  padding: 13px 0 13px 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.btn-category:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.btn-category:active {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.new::before {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+
+  width: 60px;
+  height: 59px;
+
+  background: url("../../img/new-flag.png") no-repeat;
+
+  content: "";
+}
+
+/*Слайдер*/
+
+.slider {
+  position: relative;
+
+  display: inline-block;
+  float: left;
   width: 620px;
   height: 266px;
 }
-
+/*
 .slide {
   position: absolute;
 
